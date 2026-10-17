@@ -907,6 +907,7 @@ body[data-visitor-page="profils"] .nav-cta{display:none}body[data-visitor-page="
 
 .guided-scenario-selector{margin:0 0 24px;max-width:560px}.guided-scenario-selector label{display:block;font-size:13px;font-weight:600;color:#29485f;margin-bottom:8px}.guided-scenario-selector select{width:100%;padding:12px 14px;border:1px solid #c7d8e9;border-radius:10px;font:inherit;font-size:16px;background:#fff;color:#204466}.guided-scenario-selector p{font-size:12px;color:#63798e;margin-top:8px;line-height:1.6}.guided-scenario-detail{font-size:13px;color:#4f6c86;padding:12px 16px;background:#edf5ff;border-radius:10px;margin:16px 0 24px}.guided-current-profile{font-size:12px;color:#1767b6;font-weight:600;margin-bottom:12px}.guided-draft small{font-size:12px;color:#61758a}.guided-figure strong{font-size:22px;line-height:1.3}.guided-figure{min-width:0}.guided-paper p{overflow-wrap:anywhere}@media(max-width:560px){.guided-figure strong{font-size:17px;overflow-wrap:anywhere}.guided-roles button{white-space:normal;text-align:left}}
 .guided-person{display:inline-block;padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:#f5f8fc;font-size:13px}.guided-person:first-child{background:#e8f2ff;color:#125593;font-weight:600}.guided-draft p,.guided-success p{margin-top:10px}
+.visitor-preview{margin-top:34px;text-align:left;padding:28px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 20px 55px -40px #57799f}.visitor-preview-head{display:flex;gap:16px;justify-content:space-between;flex-wrap:wrap;color:var(--mut);font-size:12px}.visitor-preview h2{font-size:28px;line-height:1.2;margin:16px 0 8px}.visitor-preview>p{color:var(--mut);font-size:14px;margin:12px 0}.visitor-preview>.btn{margin-top:14px}.visitor-preview .guided-figures{margin-top:20px}@media(max-width:560px){.visitor-preview{padding:22px 18px}}
 </style>
 <noscript><style>.reveal,.stile,.shift-col li,.checklist .ci{opacity:1;transform:none}</style></noscript>
 </head>
@@ -962,7 +963,79 @@ body[data-visitor-page="profils"] .nav-cta{display:none}body[data-visitor-page="
     </div>
 
     <p class="demo-disclosure">Explorez un exemple de tableau de bord. Les données et les événements ci-dessous sont fictifs.</p>
-    <div class="switcher">
+<section class="visitor-preview" aria-labelledby="visitorPreviewTitle"><div class="visitor-preview-head"><span class="eyebrow">Votre dossier de démonstration</span><span>Données fictives · situation initiale</span></div><h2 id="visitorPreviewTitle"></h2><p id="visitorPreviewCase"></p><div class="guided-figures" id="visitorPreviewMetrics"></div><p id="visitorPreviewIssue"></p><a href="#decouverte" data-page="decouverte" class="btn btn-primary">Explorer ce dossier →</a></section>
+  </div>
+</header>
+
+<section class="visitor-focus" aria-labelledby="visitorBenefitsTitle"><div class="wrap"><span class="eyebrow" id="visitorEyebrow">Vos priorités</span><h2 id="visitorBenefitsTitle">Un parcours adapté à votre rôle.</h2><div class="visitor-benefits" id="visitorBenefits"></div><article class="visitor-scenario"><div><span class="visitor-scenario-label">Exemple fictif · <span id="visitorDoc"></span></span><h3 id="visitorQuestion"></h3></div><p id="visitorExample"></p></article></div></section>
+<section class="section" id="pourquoi">
+  <div class="wrap">
+    <span class="eyebrow reveal">Le constat</span>
+    <h2 class="reveal" style="font-size:clamp(28px,3.8vw,46px);letter-spacing:-.025em;max-width:720px">Plus de transparence. Moins de risques. <span class="grad-text">Plus de confiance.</span></h2>
+    <p class="reveal" style="color:var(--mut);font-size:18px;max-width:620px;margin-top:18px">La copropriété représente souvent l'investissement le plus important d'une vie. Pourtant, sa gestion repose encore sur des e-mails, des fichiers Excel et des documents dispersés.</p>
+    <div class="shift-grid">
+      <div class="shift-col now">
+        <h3>Aujourd'hui</h3>
+        <ul>
+          <li><span class="m">✕</span>Les conseils syndicaux découvrent les problèmes trop tard</li>
+          <li><span class="m">✕</span>Les syndics passent leur temps à rechercher des informations</li>
+          <li><span class="m">✕</span>Les copropriétaires manquent de visibilité</li>
+          <li><span class="m">✕</span>Les obligations réglementaires se multiplient</li>
+          <li><span class="m">✕</span>Les réserves promoteur sont mal suivies</li>
+          <li><span class="m">✕</span>Les preuves sont dispersées, les contentieux coûtent cher</li>
+        </ul>
+      </div>
+      <div class="shift-col next">
+        <h3>Avec CoproAudit</h3>
+        <ul>
+          <li><span class="m">✓</span>Une gouvernance transparente et tracée</li>
+          <li><span class="m">✓</span>Une conformité surveillée en continu</li>
+          <li><span class="m">✓</span>Des alertes intelligentes avant l'échéance</li>
+          <li><span class="m">✓</span>Une mémoire complète de la copropriété</li>
+          <li><span class="m">✓</span>Une vision prédictive des risques</li>
+          <li><span class="m">✓</span>Une collaboration fluide entre tous les acteurs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow reveal">Un espace pour chaque acteur</span>
+    <h2 class="reveal" style="font-size:clamp(28px,3.8vw,46px);letter-spacing:-.025em;max-width:560px">Chacun sa vue, <span class="grad-text">une seule vérité.</span></h2>
+    <p class="reveal" style="color:var(--mut);font-size:17px;max-width:560px;margin-top:18px">CoproAudit adapte l'interface et les droits à chaque profil. Tous travaillent sur la même donnée, chacun selon son rôle.</p>
+    <div class="profiles reveal">
+      <button type="button" class="profile" data-select-profile="syndic"><span class="pic" style="background:linear-gradient(135deg,#2f6bff,#5b8bff)"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg></span><div><div class="pn">Syndic</div><div class="pd">Professionnel ou bénévole</div></div></button>
+      <button type="button" class="profile" data-select-profile="conseil-syndical"><span class="pic" style="background:linear-gradient(135deg,#7b5bff,#a78bff)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg></span><div><div class="pn">Conseil syndical</div><div class="pd">Le cockpit de contrôle</div></div></button>
+      <button type="button" class="profile" data-select-profile="coproprietaire"><span class="pic" style="background:linear-gradient(135deg,#ff5ea8,#ff7a59)"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div><div class="pn">Copropriétaire</div><div class="pd">Transparence et visibilité</div></div></button>
+      <button type="button" class="profile" data-select-profile="promoteur"><span class="pic" style="background:linear-gradient(135deg,#22d3ee,#2f6bff)"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V8l8-5 8 5v12"/></svg></span><div><div class="pn">Promoteur</div><div class="pd">Suivi des réserves et garanties</div></div></button>
+      <button type="button" class="profile" data-select-profile="primo-accedant"><span class="pic" style="background:linear-gradient(135deg,#f7b500,#ff7a59)"><svg viewBox="0 0 24 24"><path d="M20 7h-9M14 17H5M17 21l4-4-4-4M7 3 3 7l4 4"/></svg></span><div><div class="pn">Primo-accédant</div><div class="pd">Comprendre sa copropriété</div></div></button>
+      <button type="button" class="profile" data-select-profile="acheteur"><span class="pic" style="background:linear-gradient(135deg,#37c871,#22d3ee)"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></span><div><div class="pn">Acheteur</div><div class="pd">État daté et diagnostic avant achat</div></div></button>
+      <button type="button" class="profile" data-select-profile="notaire"><span class="pic" style="background:linear-gradient(135deg,#a45cf7,#7b5bff)"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><div><div class="pn">Notaire</div><div class="pd">Pièces fiables pour les mutations</div></div></button>
+      <button type="button" class="profile" data-select-profile="prestataire"><span class="pic" style="background:linear-gradient(135deg,#8a8d96,#5b8bff)"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-7 7 2 2 7-7a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2z"/></svg></span><div><div class="pn">Prestataire</div><div class="pd">Contrats et interventions tracés</div></div></button>
+      <button type="button" class="profile" data-select-profile="aful"><span class="pic" style="background:linear-gradient(135deg,#00bfba,#22d3ee)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><div><div class="pn">AFUL</div><div class="pd">Ensembles complexes et volumes</div></div></button>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="demo-1">
+  <div class="wrap">
+    <div class="final-card reveal">
+      <h2>La confiance se pilote.</h2>
+      <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
+      <div class="hero-cta">
+        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
+        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</div>
+
+<div class="page" data-page="plateforme"><section class="section"><div class="wrap"><span class="eyebrow">Vue d’ensemble de la plateforme</span><h1>Un espace commun de pilotage.</h1><p class="demo-disclosure">Exemple général illustratif, indépendant du dossier de votre profil. Les chiffres et alertes ci-dessous sont fictifs. Pour explorer votre situation, ouvrez la démo guidée.</p>    <div class="switcher">
       <div class="switch-tabs" id="switchTabs">
         <button class="switch-tab active" data-view="govern"><span class="ic" style="background:var(--signal)"></span>Govern</button>
         <button class="switch-tab" data-view="protect"><span class="ic" style="background:var(--bad)"></span>Protect</button>
@@ -1073,79 +1146,7 @@ body[data-visitor-page="profils"] .nav-cta{display:none}body[data-visitor-page="
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
-
-<section class="visitor-focus" aria-labelledby="visitorBenefitsTitle"><div class="wrap"><span class="eyebrow" id="visitorEyebrow">Vos priorités</span><h2 id="visitorBenefitsTitle">Un parcours adapté à votre rôle.</h2><div class="visitor-benefits" id="visitorBenefits"></div><article class="visitor-scenario"><div><span class="visitor-scenario-label">Exemple fictif · <span id="visitorDoc"></span></span><h3 id="visitorQuestion"></h3></div><p id="visitorExample"></p></article></div></section>
-<section class="section" id="pourquoi">
-  <div class="wrap">
-    <span class="eyebrow reveal">Le constat</span>
-    <h2 class="reveal" style="font-size:clamp(28px,3.8vw,46px);letter-spacing:-.025em;max-width:720px">Plus de transparence. Moins de risques. <span class="grad-text">Plus de confiance.</span></h2>
-    <p class="reveal" style="color:var(--mut);font-size:18px;max-width:620px;margin-top:18px">La copropriété représente souvent l'investissement le plus important d'une vie. Pourtant, sa gestion repose encore sur des e-mails, des fichiers Excel et des documents dispersés.</p>
-    <div class="shift-grid">
-      <div class="shift-col now">
-        <h3>Aujourd'hui</h3>
-        <ul>
-          <li><span class="m">✕</span>Les conseils syndicaux découvrent les problèmes trop tard</li>
-          <li><span class="m">✕</span>Les syndics passent leur temps à rechercher des informations</li>
-          <li><span class="m">✕</span>Les copropriétaires manquent de visibilité</li>
-          <li><span class="m">✕</span>Les obligations réglementaires se multiplient</li>
-          <li><span class="m">✕</span>Les réserves promoteur sont mal suivies</li>
-          <li><span class="m">✕</span>Les preuves sont dispersées, les contentieux coûtent cher</li>
-        </ul>
-      </div>
-      <div class="shift-col next">
-        <h3>Avec CoproAudit</h3>
-        <ul>
-          <li><span class="m">✓</span>Une gouvernance transparente et tracée</li>
-          <li><span class="m">✓</span>Une conformité surveillée en continu</li>
-          <li><span class="m">✓</span>Des alertes intelligentes avant l'échéance</li>
-          <li><span class="m">✓</span>Une mémoire complète de la copropriété</li>
-          <li><span class="m">✓</span>Une vision prédictive des risques</li>
-          <li><span class="m">✓</span>Une collaboration fluide entre tous les acteurs</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:0">
-  <div class="wrap">
-    <span class="eyebrow reveal">Un espace pour chaque acteur</span>
-    <h2 class="reveal" style="font-size:clamp(28px,3.8vw,46px);letter-spacing:-.025em;max-width:560px">Chacun sa vue, <span class="grad-text">une seule vérité.</span></h2>
-    <p class="reveal" style="color:var(--mut);font-size:17px;max-width:560px;margin-top:18px">CoproAudit adapte l'interface et les droits à chaque profil. Tous travaillent sur la même donnée, chacun selon son rôle.</p>
-    <div class="profiles reveal">
-      <button type="button" class="profile" data-select-profile="syndic"><span class="pic" style="background:linear-gradient(135deg,#2f6bff,#5b8bff)"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14"/></svg></span><div><div class="pn">Syndic</div><div class="pd">Professionnel ou bénévole</div></div></button>
-      <button type="button" class="profile" data-select-profile="conseil-syndical"><span class="pic" style="background:linear-gradient(135deg,#7b5bff,#a78bff)"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/></svg></span><div><div class="pn">Conseil syndical</div><div class="pd">Le cockpit de contrôle</div></div></button>
-      <button type="button" class="profile" data-select-profile="coproprietaire"><span class="pic" style="background:linear-gradient(135deg,#ff5ea8,#ff7a59)"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span><div><div class="pn">Copropriétaire</div><div class="pd">Transparence et visibilité</div></div></button>
-      <button type="button" class="profile" data-select-profile="promoteur"><span class="pic" style="background:linear-gradient(135deg,#22d3ee,#2f6bff)"><svg viewBox="0 0 24 24"><path d="M2 20h20M4 20V8l8-5 8 5v12"/></svg></span><div><div class="pn">Promoteur</div><div class="pd">Suivi des réserves et garanties</div></div></button>
-      <button type="button" class="profile" data-select-profile="primo-accedant"><span class="pic" style="background:linear-gradient(135deg,#f7b500,#ff7a59)"><svg viewBox="0 0 24 24"><path d="M20 7h-9M14 17H5M17 21l4-4-4-4M7 3 3 7l4 4"/></svg></span><div><div class="pn">Primo-accédant</div><div class="pd">Comprendre sa copropriété</div></div></button>
-      <button type="button" class="profile" data-select-profile="acheteur"><span class="pic" style="background:linear-gradient(135deg,#37c871,#22d3ee)"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></span><div><div class="pn">Acheteur</div><div class="pd">État daté et diagnostic avant achat</div></div></button>
-      <button type="button" class="profile" data-select-profile="notaire"><span class="pic" style="background:linear-gradient(135deg,#a45cf7,#7b5bff)"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><div><div class="pn">Notaire</div><div class="pd">Pièces fiables pour les mutations</div></div></button>
-      <button type="button" class="profile" data-select-profile="prestataire"><span class="pic" style="background:linear-gradient(135deg,#8a8d96,#5b8bff)"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4l-7 7 2 2 7-7a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2z"/></svg></span><div><div class="pn">Prestataire</div><div class="pd">Contrats et interventions tracés</div></div></button>
-      <button type="button" class="profile" data-select-profile="aful"><span class="pic" style="background:linear-gradient(135deg,#00bfba,#22d3ee)"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><div><div class="pn">AFUL</div><div class="pd">Ensembles complexes et volumes</div></div></button>
-    </div>
-  </div>
-</section>
-
-<section class="final" id="demo-1">
-  <div class="wrap">
-    <div class="final-card reveal">
-      <h2>La confiance se pilote.</h2>
-      <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
-      <div class="hero-cta">
-        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
-        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-</div>
-
-<div class="page" data-page="plateforme">
+    </div></div></section>
 <section class="section wall" style="padding-top:0">
   <div class="wrap">
     <span class="eyebrow reveal" style="justify-content:center;display:inline-flex">Une seule plateforme</span>
@@ -2471,7 +2472,7 @@ if(!reduce){resize();initNet();frame();addEventListener('resize',()=>{cancelAnim
  const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  function config(){return scenarios.find(s=>s.id===current);}
  function state(){if(!states.has(current))states.set(current,{step:0,requested:false,responded:false,closed:false});return states.get(current);}
- function select(id){if(!scenarios.some(s=>s.id===id))id='conseil-syndical';if(source.open)source.close();current=id;const c=config();document.getElementById('visitorDoc').textContent=c.docs[0][0];document.getElementById('visitorQuestion').textContent=c.question;document.getElementById('visitorExample').textContent=c.intro;render();}
+ function select(id){if(!scenarios.some(s=>s.id===id))id='conseil-syndical';if(source.open)source.close();current=id;const c=config();document.getElementById('visitorDoc').textContent=c.docs[0][0];document.getElementById('visitorQuestion').textContent=c.question;document.getElementById('visitorExample').textContent=c.intro;document.getElementById('visitorPreviewTitle').textContent=c.title;document.getElementById('visitorPreviewCase').textContent=c.case;document.getElementById('visitorPreviewMetrics').innerHTML=c.metrics.map(m=>'<div class="guided-figure"><span>'+esc(m[0])+'</span><strong>'+esc(m[1])+'</strong></div>').join('');document.getElementById('visitorPreviewIssue').textContent=c.issue;render();}
  function sync(){select(window.CoproVisitor.current()||'conseil-syndical');}
  function openSource(index){const doc=allDocs()[index];if(!doc)return;document.getElementById('guidedSourceTitle').textContent=doc[0];const paper=document.createElement('div');paper.className='guided-paper';const ref=document.createElement('p');ref.textContent=doc[1]+' · '+config().case;const body=document.createElement('p');body.textContent=doc[2];paper.append(ref,body);document.getElementById('guidedSourceBody').replaceChildren(paper);source.showModal();}
  function allDocs(){const c=config(),s=state();return c.docs.concat((c.id==='prestataire'?s.requested:s.responded)?[c.addedDoc]:[]);}
