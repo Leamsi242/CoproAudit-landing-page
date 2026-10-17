@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CoproAudit, le système d’exploitation des copropriétés modernes</title>
+<title>CoproAudit — Analysez vos documents, éclairez vos décisions</title>
 <meta name="description" content="CoproAudit transforme la copropriété en organisation pilotée par la donnée. Gouvernance, conformité et risques surveillés en continu par l'IA.">
 <meta name="theme-color" content="#0071e3">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -833,26 +833,70 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
   .nav-cta .cta-l{display:none}
   .nav-cta .cta-s{display:inline}
 }
+
+button.ri{width:100%;border:0;background:transparent;font:inherit;text-align:left}
+/* V2: navigation, clearer hierarchy and contact */
+:focus-visible{outline:3px solid #0071e3;outline-offset:5px}
+.skip-link{position:fixed;top:8px;left:12px;z-index:200;background:#fff;color:#1d1d1f;padding:12px 18px;border:2px solid #0071e3;border-radius:8px;transform:translateY(-150%)}
+.skip-link:focus{transform:none}
+.mobile-menu{display:none}
+.hero{padding-top:110px;padding-bottom:60px}
+.hero-split{margin-top:26px;gap:52px;align-items:center}
+.hero h1{font-size:clamp(38px,4.1vw,58px);line-height:1.07;letter-spacing:-.04em}
+.hero .lede{font-size:18px;line-height:1.65;max-width:570px;margin-top:24px}
+.hero-shot{box-shadow:0 25px 70px -40px rgba(20,45,85,.4)}
+.hero-shot .ph{aspect-ratio:1.15}
+.hero .hero-cta{gap:10px}
+.hero .hero-cta .btn{font-size:14px;padding:14px 20px}
+.demo-disclosure{font-size:13px;line-height:1.6;color:#555b68;margin-top:32px}
+.switcher{margin-top:18px}
+.testi h3{font-size:21px;line-height:1.25}.testi p{font-size:15px;color:var(--mut)}
+.usecase-result{font-size:12px;color:#1260ac;font-weight:600;margin-top:auto}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;max-width:1100px}
+.contact-grid h1{font-size:clamp(36px,4vw,54px);line-height:1.12;letter-spacing:-.04em}
+.contact-lede{font-size:18px;color:var(--mut);margin-top:24px}
+.contact-benefits{padding-left:22px;margin:28px 0;color:var(--ink)}.contact-benefits li{margin:10px 0}
+.contact-card{padding:32px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 18px 60px -35px rgba(24,48,90,.25)}
+.contact-card h2{font-size:24px;margin-bottom:24px}
+.contact-card label{display:block;font-size:14px;font-weight:600;margin:18px 0 7px}.contact-card label span{font-weight:400;color:var(--mut);font-size:12px}
+.contact-card input,.contact-card select,.contact-card textarea{display:block;width:100%;border:1px solid #c8ccd2;background:#fff;color:#1d1d1f;border-radius:9px;padding:12px;font:inherit;font-size:16px;min-height:46px}.contact-card textarea{resize:vertical}
+.contact-note{font-size:12px;line-height:1.6;color:#616875;margin-top:18px}.contact-card .btn{margin-top:20px;justify-content:center;width:100%}.btn:disabled{opacity:.55;cursor:not-allowed;animation:none}
+.nav-links a[aria-current="page"]{color:var(--ink)}
+@media(max-width:1100px){.nav-in{gap:18px}.nav-links{gap:16px;margin-left:0}.nav-cta .btn-ghost{display:none}}
+@media(max-width:920px){
+ .mobile-menu{display:flex;align-items:center;gap:8px;margin-left:auto;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
+ .nav-cta{margin-left:0}.nav-in{height:68px;gap:12px}
+ .nav-links.open{display:flex;position:absolute;top:68px;left:0;right:0;max-height:calc(100dvh - 68px);overflow-y:auto;flex-direction:column;gap:0;padding:12px 24px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 15px 30px -20px #7c8799}
+ .nav-links.open a{display:block;padding:13px 8px;font-size:16px;border-radius:7px}.nav-links.open a.on{background:#eef5ff;color:#0071e3}
+ .hero{padding-top:100px}.hero-split{margin-top:12px;gap:32px}.hero-head{width:100%}.hero h1{font-size:clamp(38px,6.5vw,56px)}
+ .hero-shot{max-width:620px;width:100%;margin:auto}.hero-shot .ph{aspect-ratio:1.6}.hero-sub{line-height:1.6}
+ .contact-grid{grid-template-columns:1fr;gap:32px}.contact-section{padding-top:104px!important}
+}
+@media(max-width:560px){.wrap{padding:0 20px}.nav-in{padding:0 16px;gap:9px}.brand{font-size:16px;gap:7px}.brand .mk{width:25px;height:25px}.mobile-menu{font-size:0;gap:0;padding:10px}.mobile-menu span{font-size:19px;line-height:1}.nav-cta .btn-primary{padding:10px 12px;font-size:12px}.hero h1{font-size:38px}.hero .lede{font-size:17px}.kicker{font-size:11px;letter-spacing:0;max-width:100%;padding:7px 10px;gap:7px}.hero .hero-cta{flex-direction:column;align-items:stretch}.hero .hero-cta .btn{justify-content:center;white-space:normal}.hero-badge{left:10px;right:10px;bottom:10px;padding:10px;gap:8px}.hero-badge .live2{display:none}.hero-badge .bt{font-size:11px}.hero-badge .bs{font-size:10px}.contact-card{padding:24px 20px}.sent-tiles{grid-template-columns:repeat(2,1fr)}.layers{grid-template-columns:1fr 1fr}.layer{border:1px solid rgba(47,107,255,.12);border-radius:0!important}.layer::after{display:none}.cp-main{padding:16px}.sentinel{gap:12px;flex-wrap:wrap}.ring{margin:auto}.wall-grid{grid-template-columns:repeat(2,1fr)}.human-copy{padding:30px 22px}.human-stats{gap:16px;flex-wrap:wrap}}
+
 </style>
 <noscript><style>.reveal,.stile,.shift-col li,.checklist .ci{opacity:1;transform:none}</style></noscript>
 </head>
 <body data-theme="apple" data-mode="light">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <div class="aurora"></div>
 <canvas id="net"></canvas>
 <div class="grain"></div>
 
 <nav class="nav" id="nav">
   <div class="nav-in">
-    <a href="#" data-page="accueil" class="brand"><span class="mk"></span>CoproAudit</a>
-    <div class="nav-links" id="navLinks">
-      <a href="#" data-page="accueil" class="on">Accueil</a><a href="#" data-page="plateforme">Plateforme</a><a href="#" data-page="coproaudit">Le moteur IA</a><a href="#" data-page="confiance">Confiance</a><a href="#" data-page="vision">Vision</a>
+    <a href="#accueil" data-page="accueil" class="brand"><span class="mk"></span>CoproAudit</a>
+    <div class="nav-links" id="navLinks" aria-label="Navigation principale">
+      <a href="#accueil" data-page="accueil" class="on">Accueil</a><a href="#plateforme" data-page="plateforme">Plateforme</a><a href="#coproaudit" data-page="coproaudit">Le moteur IA</a><a href="#confiance" data-page="confiance">Confiance</a><a href="#vision" data-page="vision">Vision</a>
     </div>
+    <button class="mobile-menu" id="mobileMenu" type="button" aria-expanded="false" aria-controls="navLinks">Menu <span aria-hidden="true">☰</span></button>
     <div class="nav-cta">
-      <a href="#" data-page="plateforme" class="btn btn-ghost">Voir la plateforme</a>
-      <a href="#" data-page="vision" class="btn btn-primary"><span class="cta-l">Demander une démonstration</span><span class="cta-s">Démonstration</span></a>
+      <a href="#plateforme" data-page="plateforme" class="btn btn-ghost">Voir la plateforme</a>
+      <a href="#contact" data-page="contact" class="btn btn-primary"><span class="cta-l">Demander une démonstration</span><span class="cta-s">Démonstration</span></a>
     </div>
   </div>
 </nav>
+<main id="contenu" tabindex="-1">
 <div class="page active" data-page="accueil">
 <header class="hero">
   <div class="wrap">
@@ -860,13 +904,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <div class="hero-head" style="text-align:left;margin:0;max-width:none">
         <span class="kicker"><span class="np">NOUVEAU</span><span><b>CoproAudit</b>, le moteur d'analyse propulsé par l'IA</span></span>
         <p class="megaclaim">Vous décidez. L'IA veille.</p>
-        <h1><span class="ln">Le système d'exploitation</span><span class="ln">des <span class="grad-text">copropriétés modernes.</span></span></h1>
-        <p class="lede" style="margin-left:0">Nous ne gérons pas des immeubles. Nous protégeons le patrimoine de millions de copropriétaires. Derrière chaque copropriété, des personnes. Derrière chaque décision, l'IA qui veille.</p>
+        <h1><span class="ln">Votre copropriété.</span><span class="ln">Des décisions <span class="grad-text">mieux éclairées.</span></span></h1>
+        <p class="lede" style="margin-left:0">Charges, contrats, procès-verbaux : CoproAudit rassemble vos documents et met en évidence les points de vigilance, leurs sources et les actions à suivre. Pour les conseils syndicaux et les syndics qui veulent y voir clair.</p>
         <div class="hero-cta" style="justify-content:flex-start">
-          <a href="#" data-page="vision" class="btn btn-primary btn-lg">Demander une démonstration</a>
-          <a href="#" data-page="plateforme" class="btn btn-ghost btn-lg">Voir la plateforme</a>
+          <a href="#contact" data-page="contact" class="btn btn-primary btn-lg">Demander une démonstration</a>
+          <a href="#plateforme" data-page="plateforme" class="btn btn-ghost btn-lg">Voir la plateforme</a>
         </div>
-        <p class="hero-sub">Hébergement européen · Conforme RGPD · Données chiffrées</p>
+        <p class="hero-sub">Documents reliés aux sources · Validation humaine des décisions</p>
       </div>
       <div class="hero-shot">
         <div class="ph">
@@ -875,12 +919,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
         </div>
         <div class="hero-badge">
           <div class="av"><div class="ph"><img loading="lazy" alt="Présidente de conseil syndical" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&q=70"><div class="fallback"></div></div></div>
-          <div><div class="bt">Conseil syndical · Résidence Haussmann</div><div class="bs">Indice de gouvernance, 79 / 100</div></div>
-          <div class="live2"><span class="pulse"></span>SUIVI ACTIF</div>
+          <div><div class="bt">Exemple · Résidence Haussmann</div><div class="bs">Indice de gouvernance, 79 / 100</div></div>
+          <div class="live2"><span class="pulse"></span>SIMULATION</div>
         </div>
       </div>
     </div>
 
+    <p class="demo-disclosure">Explorez un exemple de tableau de bord. Les données et les événements ci-dessous sont fictifs.</p>
     <div class="switcher">
       <div class="switch-tabs" id="switchTabs">
         <button class="switch-tab active" data-view="govern"><span class="ic" style="background:var(--signal)"></span>Govern</button>
@@ -893,18 +938,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <div class="cockpit">
         <div class="cockpit-bar">
           <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
-          <span class="ttl">CoproAudit, surveillance en continu</span>
-          <span class="live"><span class="pulse"></span>EN DIRECT</span>
+          <span class="ttl">CoproAudit · environnement de démonstration</span>
+          <span class="live"><span class="pulse"></span>DÉMONSTRATION</span>
         </div>
         <div class="cockpit-body">
           <div class="cp-rail">
             <div class="grp">Plateforme</div>
-            <div class="ri on" data-view="govern"><span class="sq" style="background:var(--signal)"></span>Gouvernance</div>
-            <div class="ri" data-view="protect"><span class="sq" style="background:var(--bad)"></span>Risques</div>
-            <div class="ri" data-view="predict"><span class="sq" style="background:var(--violet)"></span>Prévision</div>
-            <div class="ri" data-view="resolve"><span class="sq" style="background:var(--good)"></span>Résolution</div>
+            <button type="button" class="ri on" data-view="govern"><span class="sq" style="background:var(--signal)"></span>Gouvernance</button>
+            <button type="button" class="ri" data-view="protect"><span class="sq" style="background:var(--bad)"></span>Risques</button>
+            <button type="button" class="ri" data-view="predict"><span class="sq" style="background:var(--violet)"></span>Prévision</button>
+            <button type="button" class="ri" data-view="resolve"><span class="sq" style="background:var(--good)"></span>Résolution</button>
             <div class="grp">Intelligence</div>
-            <div class="ri" data-view="ai"><span class="sq" style="background:var(--pink)"></span>Assistant IA</div>
+            <button type="button" class="ri" data-view="ai"><span class="sq" style="background:var(--pink)"></span>Assistant IA</button>
           </div>
           <div class="cp-main">
             <!-- govern : Sentinelle command center -->
@@ -1053,8 +1098,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <h2>La confiance se pilote.</h2>
       <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
       <div class="hero-cta">
-        <a href="#" data-page="vision" class="btn btn-white btn-lg">Réserver une démonstration</a>
-        <a href="#" data-page="vision" class="btn btn-clear btn-lg">Parler à un expert</a>
+        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
+        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
       </div>
     </div>
   </div>
@@ -1218,8 +1263,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <h2>La confiance se pilote.</h2>
       <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
       <div class="hero-cta">
-        <a href="#" data-page="vision" class="btn btn-white btn-lg">Réserver une démonstration</a>
-        <a href="#" data-page="vision" class="btn btn-clear btn-lg">Parler à un expert</a>
+        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
+        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
       </div>
     </div>
   </div>
@@ -1408,8 +1453,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <h2>La confiance se pilote.</h2>
       <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
       <div class="hero-cta">
-        <a href="#" data-page="vision" class="btn btn-white btn-lg">Réserver une démonstration</a>
-        <a href="#" data-page="vision" class="btn btn-clear btn-lg">Parler à un expert</a>
+        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
+        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
       </div>
     </div>
   </div>
@@ -1477,27 +1522,15 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
 
 <section class="section roi" id="roi">
   <div class="wrap">
-    <div class="testi-section" style="margin-bottom:96px">
-      <span class="eyebrow reveal">Ils nous font confiance</span>
-      <h2 class="reveal" style="font-size:clamp(28px,3.8vw,46px);letter-spacing:-.025em;max-width:560px">Des conseils syndicaux <span class="grad-text">enfin sereins.</span></h2>
+    <div class="testi-section" style="margin-bottom:72px">
+      <span class="eyebrow reveal">Trois cas d'usage</span>
+      <h2 class="reveal" style="font-size:clamp(28px,3.8vw,46px)">De la pièce au <span class="grad-text">point de vigilance.</span></h2>
+      <p class="demo-disclosure">Exemples fictifs destinés à expliquer le parcours. Ils ne représentent pas des résultats clients.</p>
       <div class="testi-grid reveal">
-        <div class="testi">
-          <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
-          <p class="quote">« On a découvert une reconduction tacite de syndic que personne n'avait vue. L'alerte est tombée six semaines avant l'échéance. Inestimable. »</p>
-          <div class="who"><div class="av"><div class="ph"><img loading="lazy" alt="Portrait" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=160&q=70"><div class="fallback"></div></div></div><div><div class="n">Présidente de conseil syndical</div><div class="r">Résidence à Lyon, 84 lots</div></div></div>
-        </div>
-        <div class="testi">
-          <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
-          <p class="quote">« Je gère quarante immeubles. CoproAudit me fait gagner des heures chaque semaine et rassure mes clients sur la transparence. »</p>
-          <div class="who"><div class="av"><div class="ph"><img loading="lazy" alt="Portrait" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=160&q=70"><div class="fallback"></div></div></div><div><div class="n">Gestionnaire de syndic</div><div class="r">Cabinet à Paris</div></div></div>
-        </div>
-        <div class="testi">
-          <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
-          <p class="quote">« Syndic bénévole sans formation juridique, je me sentais dépassé. Maintenant je sais exactement quoi vérifier, et quand. »</p>
-          <div class="who"><div class="av"><div class="ph"><img loading="lazy" alt="Portrait" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=160&q=70"><div class="fallback"></div></div></div><div><div class="n">Syndic bénévole</div><div class="r">Copropriété à Bordeaux</div></div></div>
-        </div>
+        <article class="testi"><h3>Un contrat à relire</h3><p>Repérer une échéance dans le contrat d'entretien, consulter la clause source et préparer la question à poser au syndic.</p><span class="usecase-result">Document → échéance → action à valider</span></article>
+        <article class="testi"><h3>Des charges à comprendre</h3><p>Rapprocher un appel de fonds du budget voté et examiner les écarts avant de demander une explication.</p><span class="usecase-result">Budget → écart → vérification</span></article>
+        <article class="testi"><h3>Une décision à suivre</h3><p>Retrouver une résolution dans le procès-verbal et rassembler les pièces nécessaires au suivi de son exécution.</p><span class="usecase-result">Procès-verbal → décision → suivi</span></article>
       </div>
-      <p class="roi-note reveal" style="margin-top:20px">Témoignages illustratifs présentés à des fins de démonstration. À remplacer par vos clients réels.</p>
     </div>
     <div class="roi-head reveal">
       <span class="eyebrow" style="justify-content:center;display:inline-flex">L'impact</span>
@@ -1539,8 +1572,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <h2>La confiance se pilote.</h2>
       <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
       <div class="hero-cta">
-        <a href="#" data-page="vision" class="btn btn-white btn-lg">Réserver une démonstration</a>
-        <a href="#" data-page="vision" class="btn btn-clear btn-lg">Parler à un expert</a>
+        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
+        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
       </div>
     </div>
   </div>
@@ -1600,8 +1633,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
       <h2>La confiance se pilote.</h2>
       <p>Découvrez comment CoproAudit transforme la gouvernance des copropriétés.</p>
       <div class="hero-cta">
-        <a href="#" data-page="vision" class="btn btn-white btn-lg">Réserver une démonstration</a>
-        <a href="#" data-page="vision" class="btn btn-clear btn-lg">Parler à un expert</a>
+        <a href="#contact" data-page="contact" class="btn btn-white btn-lg">Réserver une démonstration</a>
+        <a href="#contact" data-page="contact" class="btn btn-clear btn-lg">Parler à un expert</a>
       </div>
     </div>
   </div>
@@ -1609,64 +1642,76 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
 
 
 </div>
+
+<div class="page" data-page="contact">
+<section class="section contact-section"><div class="wrap contact-grid">
+  <div><span class="eyebrow">Parlons de votre copropriété</span><h1>Une démonstration,<br><span class="grad-text">sur vos enjeux.</span></h1><p class="contact-lede">Dites-nous qui vous êtes et ce que vous souhaitez comprendre. Nous pourrons préparer un échange autour des documents, des charges ou du suivi des décisions.</p><ul class="contact-benefits"><li>Un parcours adapté à votre rôle</li><li>Des exemples de documents et de points de vigilance</li><li>Vos questions sur le fonctionnement de CoproAudit</li></ul><p class="contact-note">Ne joignez aucun document confidentiel à votre première demande.</p></div>
+  <form id="demoForm" class="contact-card" data-contact-email="ickabore@gmail.com" aria-describedby="contactStatus">
+    <h2>Préparer ma demande</h2>
+    <label for="contactName">Votre nom <span>(obligatoire)</span></label><input id="contactName" name="name" autocomplete="name" maxlength="120" required>
+    <label for="contactEmail">Votre e-mail <span>(obligatoire)</span></label><input id="contactEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+    <label for="contactRole">Vous êtes</label><select id="contactRole" name="role"><option>Conseil syndical</option><option>Syndic professionnel</option><option>Syndic bénévole</option><option>Copropriétaire</option><option>Autre</option></select>
+    <label for="contactMessage">Votre besoin <span>(facultatif)</span></label><textarea id="contactMessage" name="message" rows="4" maxlength="2000" placeholder="Par exemple : mieux comprendre nos charges ou suivre les décisions d’AG."></textarea>
+    <p id="contactStatus" class="contact-note" role="status">Votre messagerie s’ouvrira avec une demande préremplie. Aucun e-mail n’est envoyé automatiquement.</p>
+    <button id="contactSend" class="btn btn-primary" type="submit">Ouvrir ma messagerie</button>
+    <p class="contact-note">Ce formulaire ne stocke aucune saisie sur le site. Une fois activé, il préparera un e-mail dans votre messagerie ; vous choisirez de l'envoyer.</p>
+  </form>
+</div></section>
+</div>
+</main>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <a href="#" data-page="vision" class="brand"><span class="mk"></span>CoproAudit</a>
+        <a href="#vision" data-page="vision" class="brand"><span class="mk"></span>CoproAudit</a>
         <p>L'infrastructure de confiance des copropriétés européennes, propulsée par l'IA.</p>
       </div>
-      <div><h5>Plateforme</h5><a href="#" data-page="plateforme">Govern</a><a href="#" data-page="plateforme">Protect</a><a href="#" data-page="plateforme">Predict</a><a href="#" data-page="plateforme">Resolve</a></div>
-      <div><h5>Solutions</h5><a href="#" data-page="vision">Audit de copropriété par IA</a><a href="#" data-page="vision">Contrôle du syndic</a><a href="#" data-page="vision">AFUL OS</a><a href="#" data-page="vision">Observatoire national</a></div>
-      <div><h5>Entreprise</h5><a href="#" data-page="vision">Notre vision</a><a href="#" data-page="confiance">Sécurité</a><a href="#" data-page="vision">Démonstration</a><a href="#" data-page="vision">Nous contacter</a></div>
+      <div><h5>Plateforme</h5><a href="#plateforme" data-page="plateforme">Govern</a><a href="#plateforme" data-page="plateforme">Protect</a><a href="#plateforme" data-page="plateforme">Predict</a><a href="#plateforme" data-page="plateforme">Resolve</a></div>
+      <div><h5>Solutions</h5><a href="#vision" data-page="vision">Audit de copropriété par IA</a><a href="#vision" data-page="vision">Contrôle du syndic</a><a href="#vision" data-page="vision">AFUL OS</a><a href="#vision" data-page="vision">Observatoire national</a></div>
+      <div><h5>Entreprise</h5><a href="#vision" data-page="vision">Notre vision</a><a href="#confiance" data-page="confiance">Sécurité</a><a href="#contact" data-page="contact">Démonstration</a><a href="#contact" data-page="contact">Nous contacter</a></div>
     </div>
     <div class="foot-bottom"><span>© 2026 CoproAudit. Tous droits réservés.</span><span class="tag">La confiance se pilote.</span></div>
   </div>
 </footer>
 <script>
-// single-file page router
+// V2: explicit routes, native links, browser history and accessible mobile navigation.
 (function(){
-  const pages=[...document.querySelectorAll('.page')];
-  let canHash=true;
-  try{const h=location.hash;}catch(e){canHash=false;}
-  function getHash(){try{return (location.hash||'').slice(1);}catch(e){return '';}}
-  function current(){const a=document.querySelector('.page.active');return a?a.dataset.page:null;}
-  function show(id,opts){
-    opts=opts||{};
-    const changed = current()!==id;
+  const pages=[...document.querySelectorAll('main > .page')];
+  const menu=document.getElementById('mobileMenu'), links=document.getElementById('navLinks');
+  const titles={accueil:'CoproAudit — Des décisions mieux éclairées',plateforme:'La plateforme | CoproAudit',coproaudit:'Le moteur IA | CoproAudit',confiance:'Confiance et cas d’usage | CoproAudit',vision:'Notre vision | CoproAudit',contact:'Demander une démonstration | CoproAudit'};
+  function closeMenu(){links.classList.remove('open');menu.setAttribute('aria-expanded','false');}
+  function route(){return location.hash.slice(1)||'accueil';}
+  function show(id,opts={}){
+    if(!Object.hasOwn(titles,id))id='accueil';
+    const changed=!document.querySelector('.page.active[data-page="'+id+'"]');
     pages.forEach(p=>p.classList.toggle('active',p.dataset.page===id));
-    document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('on',a.dataset.page===id));
-    if(changed && opts.scroll!==false){window.scrollTo({top:0,behavior:'auto'});}
-    if(canHash){try{if(getHash()!==id)history.replaceState(null,'','#'+id);}catch(e){canHash=false;}}
+    links.querySelectorAll('a').forEach(a=>{const active=a.dataset.page===id;a.classList.toggle('on',active);if(active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+    document.title=titles[id];closeMenu();
+    if(changed&&opts.scroll!==false)window.scrollTo({top:0,behavior:'instant'});
+    if(opts.focus){const title=document.querySelector('.page.active h1,.page.active h2');if(title){title.tabIndex=-1;title.focus({preventScroll:true});}}
     window.dispatchEvent(new CustomEvent('pageshown',{detail:id}));
   }
-  // delegate clicks so dynamically added links (footer "next page") also work
+  menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';links.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){closeMenu();menu.focus();}});
   document.addEventListener('click',e=>{
-    const a=e.target.closest('[data-page]');
-    if(!a)return;
-    e.preventDefault();
-    show(a.dataset.page);
+    const a=e.target.closest('a[data-page]');
+    if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+    if(!Object.hasOwn(titles,a.dataset.page))return;
+    e.preventDefault();const id=a.dataset.page;
+    if(route()!==id)history.pushState(null,'','#'+id);
+    show(id,{focus:true});
   });
-  // inject "continue to next page" block at the end of each page
-  const order=[
-    {id:'accueil',title:'Accueil'},
-    {id:'plateforme',title:'La plateforme',sub:'Modules, moteurs et capacités réunis.'},
-    {id:'coproaudit',title:'Le moteur IA',sub:'CoproAudit lit, surveille et alerte en continu.'},
-    {id:'confiance',title:'Confiance et impact',sub:'Sécurité, conformité, résultats.'},
-    {id:'vision',title:'Notre vision',sub:'Là où nous emmenons la copropriété.'}
-  ];
-  const ARROW='<svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
-  order.forEach((cur,i)=>{
-    const next=order[(i+1)%order.length];
-    const pageEl=document.querySelector('.page[data-page="'+cur.id+'"]');
-    if(!pageEl)return;
-    const nav=document.createElement('nav');nav.className='pagenav';
-    nav.innerHTML='<a href="#" data-page="'+next.id+'"><div><div class="pn-lbl">Continuer la visite</div><div class="pn-title">'+next.title+'</div>'+(next.sub?'<div class="pn-sub">'+next.sub+'</div>':'')+'</div><span class="pn-arrow">'+ARROW+'</span></a>';
-    pageEl.appendChild(nav);
-  });
-  window.__goToPage=show;
-  const start=(getHash()||'accueil');
-  show(pages.some(p=>p.dataset.page===start)?start:'accueil',{scroll:false});
+  window.addEventListener('popstate',()=>show(route(),{focus:true}));
+  window.addEventListener('hashchange',()=>show(route(),{focus:true}));
+  window.__goToPage=(id)=>{if(!Object.hasOwn(titles,id))return;history.pushState(null,'','#'+id);show(id,{focus:true});};
+  const order=['accueil','plateforme','coproaudit','confiance','vision'];
+  const labels=['Accueil','La plateforme','Le moteur IA','Confiance et cas d’usage','Notre vision'];
+  order.forEach((id,i)=>{const next=order[(i+1)%order.length];const nav=document.createElement('nav');nav.className='pagenav';nav.setAttribute('aria-label','Continuer la visite');nav.innerHTML='<a href="#'+next+'" data-page="'+next+'"><div><div class="pn-lbl">Continuer la visite</div><div class="pn-title">'+labels[(i+1)%order.length]+'</div></div><span class="pn-arrow" aria-hidden="true">→</span></a>';document.querySelector('.page[data-page="'+id+'"]').appendChild(nav);});
+  show(route(),{scroll:false});
+  const form=document.getElementById('demoForm'),send=document.getElementById('contactSend'),status=document.getElementById('contactStatus');
+  const email=form.dataset.contactEmail;
+  if(email){send.disabled=false;status.textContent='Votre messagerie s’ouvrira avec une demande préremplie. Aucun e-mail n’est envoyé automatiquement.';}
+  form.addEventListener('submit',e=>{e.preventDefault();if(!email||!form.reportValidity())return;const d=new FormData(form);const body='Bonjour,\n\nJe souhaite une démonstration de CoproAudit.\nNom : '+d.get('name')+'\nE-mail : '+d.get('email')+'\nProfil : '+d.get('role')+'\n\nBesoin : '+d.get('message');location.href='mailto:'+email+'?subject='+encodeURIComponent('Demande de démonstration CoproAudit')+'&body='+encodeURIComponent(body);status.textContent='Demande préparée. Vérifiez votre messagerie pour l’envoyer ; rien n’a été envoyé par le site.';});
 })();
 </script><script>
 const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
